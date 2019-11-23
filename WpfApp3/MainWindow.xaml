@@ -1,0 +1,94 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="HardwareViewer 3.0" Height="741" Width="1642.5" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Height="907" Width="1600">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="395*"/>
+                <ColumnDefinition Width="609*"/>
+                <ColumnDefinition Width="150*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock TextWrapping="Wrap" Name="CPUName" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,101,166,579" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="Cores" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,133,166,552" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="Threads" RenderTransformOrigin="-0.449,2.125" Margin="51,165,166,520" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="MaxClock" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,197,166,479" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RAM" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="410,100,748,786" Grid.ColumnSpan="2" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="MainboardMan" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="87,129,383,753" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="MainboardN" RenderTransformOrigin="-0.449,2.125" Margin="87,105,383,778" Grid.Column="1" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="BIOSV" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="87,159,383,719" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="BIOSN1" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="87,193,383,690" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="ReleaseD" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="87,222,383,635" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="DeviceID" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,124,66,756" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="GPUName" RenderTransformOrigin="-0.449,2.125" Margin="466,95,65,786" Grid.Column="1" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="AdapterRAM" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,159,66,727" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="AdapterDACTYPE" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="467,188,65,698" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="Monochrome" RenderTransformOrigin="-0.449,2.125" Margin="466,217,66,0" Grid.Column="1" FontFamily="Unispace" Height="24" VerticalAlignment="Top"><Run Text="TextBlo"/><Run Text="ck"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="InstalledDisplayDrivers" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="467,246,65,635" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="DriverVersion" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,280,66,606" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="VideoProcessor" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,309,66,577" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="Videoarchitecture" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,338,66,548" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="VIdeoMemType" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="466,367,66,508" Grid.Column="1" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="WindowsDirectory" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,367,155,319" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="Caption" RenderTransformOrigin="-0.449,2.125" Margin="51,338,155,354" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="ProductType" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,402,155,292" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="SerialNumber" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,433,155,261" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="SystemDirectory" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,460,155,231" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="CountryCode" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,490,155,204" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="CurrentTimeZone" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,523,155,363" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="EncryptionLevel" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,552,155,334" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="OSType" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,581,155,306" FontFamily="Unispace"/>
+            <TextBlock TextWrapping="Wrap" x:Name="OSVersion" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="51,610,155,268" FontFamily="Unispace" FontSize="10"/>
+            <Image Margin="40,6,428,821" Source="cpu-simple-icon-vector-line-art-black-and-white-png-images-cpu-png-black-and-white-371_368.png.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="80" Height="80">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.775"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Grid.Column="1" Margin="73,-5,661,802" Source="motherboard-icon-23.jpg.png" Stretch="Fill" Height="110" Width="110"/>
+            <Image Grid.Column="1" Margin="416,-9,231,820" Source="100310.png" Stretch="Fill"/>
+            <Image Margin="37,240,421,577" Source="images.png" Stretch="Fill" Width="90" Height="90"/>
+            <TextBlock x:Name="SoundDevName" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,338,631,354" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="ProductName" RenderTransformOrigin="-0.449,2.125" Margin="410,362,631,526" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="Avail" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,386,631,497" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="DeviceID2" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,415,458,429" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="PowerManagementSupported" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,483,631,400" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="Status1" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,512,631,374" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="StatusInfo" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="410,541,631,342" FontFamily="Unispace" Grid.ColumnSpan="2"><Run Text="TextBlock"/></TextBlock>
+            <Image Margin="410,239,51,579" Source="Image1.png" Stretch="Fill"/>
+            <Image Margin="397,1,51,817" Source="index1.png" Stretch="Fill" Width="89"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RAMTest" Text="TextBlock" RenderTransformOrigin="-0.449,2.125" Margin="410,122,748,764" Grid.ColumnSpan="2" FontFamily="Unispace"/>
+            <TextBlock x:Name="lblName" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,552,10,334" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="lblTotalSize" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,581,104,305" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="lblTotalFreeSize" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,610,104,276" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="lblAvailableFreeSpace" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,635,104,251" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="lblDriveFormat" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,664,105,222" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="lblDriveType" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,688,105,198" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="cboDrive" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="466,490,0,0" SelectionChanged="CboDrive_SelectionChanged"/>
+            <TextBlock x:Name="Niggerdrive" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="466,523,-6,363" FontFamily="Unispace" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Image Grid.Column="1" Margin="461,392,290,422" Source="hard_disk_678233.png" Stretch="Fill" Width="93"/>
+            <TextBlock x:Name="keyboard" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,709,146,174" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,731,146,152" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy1" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,754,146,129" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy2" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,777,146,106" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy3" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,795,146,88" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy4" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,818,146,65" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="keyboard_Copy5" TextWrapping="Wrap" RenderTransformOrigin="-0.449,2.125" Margin="51,841,146,42" FontFamily="Unispace"><Run Text="TextBlock"/></TextBlock>
+            <Button Content="About" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Grid.Column="2" Margin="136,10,0,0" Height="60" Click="Button_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Image Margin="51,620,413,206" Source="Icons8-Ios7-Computer-Hardware-Keyboard.ico" Stretch="Fill"/>
+        </Grid>
+    </ScrollViewer>
+</Window>
